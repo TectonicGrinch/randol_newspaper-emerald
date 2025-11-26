@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paperboy Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <div class="menu-wrapper">
+            <div class="menu">
+                <div class="header">
+                    <h1>📰 Paperboy Delivery</h1>
+                    <button class="close-btn" onclick="closeMenu()">✕</button>
+                </div>
+                
+                <div class="actions-section" id="actionsSection">
+                    <button class="action-btn restock-btn hidden" id="restockBtn" onclick="restockPapers()">
+                        📦 Restock Newspapers (-10 EXP)
+                    </button>
+                    <button class="action-btn complete-btn hidden" id="completeBtn" onclick="completeJob()">
+                        ✓ Complete Job
+                    </button>
+                </div>
+
+                <div class="player-info">
+                    <div class="level-section">
+                        <div class="level-badge">
+                            <span class="level-text">Level <span id="playerLevel">1</span></span>
+                        </div>
+                        <div class="exp-bar">
+                            <div class="exp-fill" id="expFill"></div>
+                            <span class="exp-text" id="expText">0 / 100 EXP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">Total Earned</div>
+                            <div class="stat-value" id="totalMoney">$0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Routes Completed</div>
+                            <div class="stat-value" id="routesCompleted">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Papers Delivered</div>
+                            <div class="stat-value" id="papersDelivered">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Papers Missed</div>
+                            <div class="stat-value" id="papersMissed">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Current Vehicle</div>
+                            <div class="stat-value" id="currentVehicle">Cruiser</div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="routes-section">
+                    <h2>
+                        Available Routes
+                        <span class="routes-count" id="routesCount">0/0</span>
+                    </h2>
+                    <div id="routesList"></div>
+                </div>
+
+                <div class="leaderboard-section">
+                    <h2>
+                        🏆 Top Deliverers
+                        <span class="leaderboard-rank-text" id="leaderboardRank">Your Rank: #0</span>
+                    </h2>
+                    <div id="leaderboardList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
