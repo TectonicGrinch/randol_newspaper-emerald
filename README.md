@@ -1,4 +1,4 @@
-# Randolio: Newspaper Delivery
+# Randolio: Newspaper Delivery - emerald modified
 
 Inspired by the GTA Online Acid Lab deliveries, this script allows you to be the ultimate newspaper boy. Get assigned a random area to deliver to with a set number of locations. You'll be handed the amount of newspapers to match the number of locations in that area. Pull up close until you see that pink draw marker, pull out your newspaper, aim and YEET it into the zone to deliver. Customizable areas, set locations and payouts per area.
 
